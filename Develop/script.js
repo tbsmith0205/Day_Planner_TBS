@@ -7,8 +7,10 @@ function init() {
 
 function addTimetoHeader() {
   // set time in header
-  var timeEl = document.getElementById("currentDay");
-  timeEl.textContent = moment();
+  var rightNow = moment().format("MMM DD, YYYY [at] hh:mm:ss a");
+  timeDisplayEl.text(rightNow);
+  // can be used to constantly update time
+  //   var interval = setInterval(colorUpdater, 30000);
 }
 
 function addColorToTimeSlot() {
@@ -19,3 +21,5 @@ function getHourOfTheDay() {}
 
 // start
 init();
+
+setInterval(addTimetoHeader), 1000;
