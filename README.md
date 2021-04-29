@@ -1,4 +1,4 @@
-# 05 Day Planner
+# Day Planner
 
 ## Description
 
