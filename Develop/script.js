@@ -1,16 +1,12 @@
 // when this DOM is done loading, then call everything within this function
 $(document).ready(function () {
   //write all of our jQuery inside this function
-  // variable declarations
   // display the date to the user
   // grab reference to element that we want the time to be displayed on
   var currentDay = $("#currentDay");
   //display the current day in that p element
   currentDay.text(moment().format("dddd, MMM Do"));
 
-  // style 2 elements - one past, one future and set it statically
-
-  //   currently im able to write text in the text area, but not caputring the data and storing in local storage
 
   //functions
   // function will be responsible for checking the time and determining what class to add - past,present,or future
@@ -59,7 +55,7 @@ $(document).ready(function () {
   $("#hour-15 .description").val(localStorage.getItem("hour-15"));
   $("#hour-16 .description").val(localStorage.getItem("hour-16"));
   $("#hour-17 .description").val(localStorage.getItem("hour-17"));
-});
+};
 
 // function init() {
 //   // read loacl storage and assign to time slots
