@@ -7,7 +7,6 @@ $(document).ready(function () {
   //display the current day in that p element
   currentDay.text(moment().format("dddd, MMM Do"));
 
-
   //functions
   // function will be responsible for checking the time and determining what class to add - past,present,or future
   function checkTime() {
@@ -19,17 +18,17 @@ $(document).ready(function () {
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
-     // check the currentHour against blockHour
-    // if else
+      // check the currentHour against blockHour
+      // if else
       if (blockHour < currentHour) {
-      $(this).addClass("past");
-    } else if(blockHour === currentHour) {
+        $(this).addClass("past");
+      } else if (blockHour === currentHour) {
         $(this).addClass("present");
-    } else {
+      } else {
         $(this).addClass("future");
-    }
-  });
-    
+      }
+    });
+  }
 
   checktime();
 
@@ -55,7 +54,7 @@ $(document).ready(function () {
   $("#hour-15 .description").val(localStorage.getItem("hour-15"));
   $("#hour-16 .description").val(localStorage.getItem("hour-16"));
   $("#hour-17 .description").val(localStorage.getItem("hour-17"));
-};
+});
 
 // function init() {
 //   // read loacl storage and assign to time slots
