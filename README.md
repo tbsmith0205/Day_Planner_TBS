@@ -8,7 +8,7 @@ I used the [Moment.js](https://momentjs.com/) library to work with date and time
 
 ## Deployed Site
 
-https://ibb.co/Np6wz4X
+[![Work-Day-Scheduler.png](https://i.postimg.cc/3J1SshX2/Work-Day-Scheduler.png)](https://postimg.cc/8jFmvqnC)
 
 Link: https://tbsmith0205.github.io/Day_Planner_TBS/
 
